@@ -1,6 +1,9 @@
-For better memory management, to avoid memory leak C++11 introduced shared pointer. when multiple pointer pointing one resource then it shared resource , in this case there  will be chance of memory leak and dangling pointer.
+For better memory management, to avoid memory leak C++11 introduced smart pointer. when multiple pointer pointing one resource then it is shared resource , in this case there  will be chance of memory leak and dangling pointer.
+There are 3 types of unique pointer----------
+1)unique_ptr 2) weak_ptr 3) shared_ptr
+
 * unique_ptr is a template. why it is called unique ptr becasue at onec 1 unique_ptr object can hold raw pointer . Mutiple unique_ptr can not  point same resource  thats the rule here. But we can move ownership of unique_ptr.
-* 
+
 ![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/af7871c4-c6bd-447c-81c9-ad5cadd05218)
 ![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/f5fe06c7-31c0-4739-a16a-5c1ad9deac20)
 ![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/2d13b2c1-8176-4235-a71c-9a8a4c121eb0)
