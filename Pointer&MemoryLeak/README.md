@@ -13,5 +13,9 @@ There are 3 types of unique pointer----------
 ![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/f753875d-955e-414d-9133-ae1403628613)
 
 
+** shared_ptr   
+![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/e293d4c7-2dd4-4f38-a911-a0e6b8ed8095)
+
+
 
 
