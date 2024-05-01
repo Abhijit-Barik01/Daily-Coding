@@ -15,7 +15,7 @@ There are 3 types of unique pointer----------
 
 ** shared_ptr   
 ![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/e293d4c7-2dd4-4f38-a911-a0e6b8ed8095)
-
+```
 #include<iostream>
 #include<memory>
 
@@ -51,9 +51,9 @@ class MemoryPointer{
     return 0;
  }
 
+```
 
-
-
+```
 #include<iostream>
 #include<memory>
 using namespace std;
@@ -89,4 +89,4 @@ int main()
     return 0;
 }
 
-
+```
