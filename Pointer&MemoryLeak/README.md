@@ -16,6 +16,77 @@ There are 3 types of unique pointer----------
 ** shared_ptr   
 ![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/e293d4c7-2dd4-4f38-a911-a0e6b8ed8095)
 
+#include<iostream>
+#include<memory>
 
+using namespace std;
+ 
+class MemoryPointer{
+
+    public:
+    void memoryHnadler();
+
+};
+ void MemoryPointer::memoryHnadler()
+ {
+    shared_ptr<int> p1(new int(20));
+    shared_ptr<int> p2;
+    p2 =p1 ;
+
+    cout<<"total refefferenc count " << p1.use_count() <<endl;
+    cout<<"total refference count " << p2.use_count() <<endl;
+    cout<<"Address of p1"<<p1.get()<<endl;
+    cout<<"Address of p2 "<<p2.get() <<endl;
+
+    p1.reset();
+    cout<<"total refefferenc count " << p1.use_count() <<endl;
+    cout<<"total refference count " << p2.use_count() <<endl;
+
+ }
+ 
+ int main()
+ {
+    MemoryPointer obj ;
+    obj.memoryHnadler();
+    return 0;
+ }
+
+
+
+
+#include<iostream>
+#include<memory>
+using namespace std;
+
+class Tyre
+{
+    public:
+     void dorepair() {};
+};
+
+class Car
+{
+    private:
+    shared_ptr<Tyre>wheel1;
+
+    public:
+      Car() : wheel1(make_shared<Tyre>()) {
+        cout<<"adress of wheel1 " << wheel1.get() <<endl;
+      };
+
+      shared_ptr<Tyre>Getwheel(){
+        return wheel1;
+      }
+
+    
+};
+int main()
+{
+    Car car;
+    shared_ptr<Tyre>wheel(car.Getwheel());
+   cout<< "Adress of  wheel" << wheel.get();
+
+    return 0;
+}
 
 
