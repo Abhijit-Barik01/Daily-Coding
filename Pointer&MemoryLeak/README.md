@@ -70,7 +70,9 @@ class Car
     shared_ptr<Tyre>wheel1;
 
     public:
-      Car() : wheel1(make_shared<Tyre>()) {
+      Car()
+        {
+          wheel1 = make_shared(new Tyre());
         cout<<"adress of wheel1 " << wheel1.get() <<endl;
       };
 
