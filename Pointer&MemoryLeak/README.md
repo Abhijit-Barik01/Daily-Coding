@@ -92,3 +92,9 @@ int main()
 }
 
 ```
+
+
+![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/935ac903-8804-4ba4-9c6f-221446b09281)
+
+
+![image](https://github.com/Abhijit-Barik01/Daily-Coding/assets/71961635/77b28087-e562-4d01-b1ac-9f1e1e552e4d)
